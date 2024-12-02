@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=\, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<span>click counter : 0</span>
+	<button id="btn">click me</button>
+</body>
+<script>
+	const $btn = document.getElementById('btn');
+	const $span = document.querySelector('span');
+	let counter = 0;
+	const clickEvent = ()=>{
+		console.log('it was clicked');
+		counter++;
+		$span.textContent = `click counter : ${counter}`
+	}
+	$btn.addEventListener('click', clickEvent);
+</script>
+</html>
