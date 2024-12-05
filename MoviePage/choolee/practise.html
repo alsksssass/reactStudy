@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div id="root"></div>
+	</body>
+	<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+	<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel">
+		const root = document.getElementById("root");
+		function MinutesToHour ()
+		{
+			const [amount, setAmount] = React.useState(0);
+			const [flipped, setFlipped] = React.useState(0);
+			const onChange = (event) => {
+				setAmount(event.target.value);
+			}
+			const reset = () => {
+				setAmount(0);
+			}
+			const onFlip = () => {
+				if (flipped === 3)
+				{
+					setFlipped(0);
+					reset();
+				}
+				else
+				{
+					setFlipped((current) => current + 1);
+					reset();
+				}
+			}
+			function calcurateMinutes (flipped, amount)
+			{
+				if (flipped == 0)
+					return (amount)
+				if (flipped == 1)
+					return amount * 60
+				if (flipped == 2)
+					return (amount * 60 * 24)
+				if (flipped == 3)
+					return (amount * 60 * 24 * 365)
+			}
+			function calcurateHour (flipped, amount)
+			{
+				if (flipped == 0)
+					return (amount / 60)
+				if (flipped == 1)
+					return amount
+				if (flipped == 2)
+					return (amount * 24)
+				if (flipped == 3)
+					return (amount * 365 * 24)
+			}
+			function calcurateDays(flipped, amount)
+			{
+				if (flipped == 0)
+					return (amount / 60) / 24
+				if (flipped == 1)
+					return amount / 24
+				if (flipped == 2)
+					return (amount)
+				if (flipped == 3)
+					return (amount * 365)
+			}
+			function calcurateYear(flipped, amount)
+			{
+				if (flipped == 0)
+					return ((amount / 365) / 24 ) / 60
+				if (flipped == 1)
+					return (amount / 365) / 24
+				if (flipped == 2)
+					return (amount / 365)
+				if (flipped == 3)
+					return (amount)
+			}
+			return (
+				<div>
+					<div>
+					<label htmlFor="minutes">Minutes</label>
+					<input 
+						value={calcurateMinutes(flipped, amount)}
+						id="minutes"
+						placeholer="Minutes"
+						type="number"
+						onChange={onChange}
+						disabled={flipped !== 0}
+					/>
+					</div>
+					<div>
+					<label htmlFor="hours">Hours</label>
+					<input
+						value={calcurateHour(flipped, amount)}
+						id="hour"
+						placeholder="Hours" 
+						type="number" 
+						onChange={onChange}
+						disabled={flipped !== 1}
+					/>
+					</div>
+					<div>
+						<label htmlFor="days">Days</label>
+						<input
+							value={calcurateDays(flipped, amount)}
+							id="days"
+							placeholder="Days"
+							type="number"
+							onChange={onChange}
+							disabled={flipped !== 2}
+						/>
+					</div>
+					<div>
+						<label htmlFor="year">Year</label>
+						<input
+							value={calcurateYear(flipped, amount)}
+							id="year"
+							placeholder="Year"
+							type="number"
+							onChange={onChange}
+							disabled={flipped !== 3}
+						/>
+					</div>
+					<button onClick={reset}>Reset</button>
+					<button onClick={onFlip}>Flip</button>
+				</div>
+			);
+		}
+		function KmToMiles() {
+			const [amount, setAmount] = React.useState(0);
+			const [flipped, setFlipped] = React.useState(0);
+			const onChange = (event) => {
+				setAmount(event.target.value);
+			}
+			const reset = () => {
+				setAmount(0);
+			}
+			const onFlip = () => {
+				if (flipped === 3)
+				{
+					setFlipped(0);
+					reset();
+				}
+				else
+				{
+					setFlipped((current) => current + 1);
+					reset();
+				}
+			}
+			function calcurateMinutes (flipped, amount)
+			{
+				if (flipped == 0)
+					return (amount)
+				if (flipped == 1)
+					return amount * 10
+				if (flipped == 2)
+					return (amount * 10 * 100)
+				if (flipped == 3)
+					return (amount * 10 * 100 * 1000)
+			}
+			function calcurateHour (flipped, amount)
+			{
+				if (flipped == 0)
+					return (amount / 10)
+				if (flipped == 1)
+					return amount
+				if (flipped == 2)
+					return (amount * 100)
+				if (flipped == 3)
+					return (amount * 100 * 1000)
+			}
+			function calcurateDays(flipped, amount)
+			{
+				if (flipped == 0)
+					return (amount / 10) / 100
+				if (flipped == 1)
+					return amount / 100
+				if (flipped == 2)
+					return (amount)
+				if (flipped == 3)
+					return (amount * 1000)
+			}
+			function calcurateYear(flipped, amount)
+			{
+				if (flipped == 0)
+					return ((amount / 1000) / 100 ) / 10
+				if (flipped == 1)
+					return (amount / 1000) / 100
+				if (flipped == 2)
+					return (amount / 1000)
+				if (flipped == 3)
+					return (amount)
+			}
+			return (
+				<div>
+					<div>
+					<label htmlFor="mm">mm</label>
+					<input 
+						value={calcurateMinutes(flipped, amount)}
+						id="mm"
+						placeholer="mm"
+						type="number"
+						onChange={onChange}
+						disabled={flipped !== 0}
+					/>
+					</div>
+					<div>
+					<label htmlFor="cm">cm</label>
+					<input
+						value={calcurateHour(flipped, amount)}
+						id="cm"
+						placeholder="cm" 
+						type="number" 
+						onChange={onChange}
+						disabled={flipped !== 1}
+					/>
+					</div>
+					<div>
+						<label htmlFor="days">m</label>
+						<input
+							value={calcurateDays(flipped, amount)}
+							id="m"
+							placeholder="m"
+							type="number"
+							onChange={onChange}
+							disabled={flipped !== 2}
+						/>
+					</div>
+					<div>
+						<label htmlFor="year">km</label>
+						<input
+							value={calcurateYear(flipped, amount)}
+							id="km"
+							placeholder="km"
+							type="number"
+							onChange={onChange}
+							disabled={flipped !== 3}
+						/>
+					</div>
+					<button onClick={reset}>Reset</button>
+					<button onClick={onFlip}>Flip</button>
+				</div>
+			);
+		}
+
+		function App () {
+			const [index, setIndex] = React.useState("0")
+			const onSelect = (event) => {
+				setIndex(event.target.value);
+			}
+			return (
+				<div>
+					<h1>Super Converter</h1>
+					<select value={index} onChange={onSelect}>
+						<option value="0">Minutes & Hours</option>
+						<option value="1">Km & Miles</option>
+					</select>
+					<hr />
+					{index === "0" ? <MinutesToHour /> : null}
+					{index === "1" ? <KmToMiles /> : null}
+				</div>
+			);
+		};
+		ReactDOM.render(<App/>, root);
+	</script>
+</html>
