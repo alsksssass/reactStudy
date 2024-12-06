@@ -8,29 +8,70 @@
 	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script type="text/babel">
 		const root = document.getElementById("root");
-		function Title() {
-			return (
-				<h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-				Hello I'm a title
-				</h3>
-			)
-		}
-		const Button = () => (
-			<button style={{backgroundColor: "tomato",}} onClick={() => console.log("im cliccked")}>
-				Click me
-			</button>
-			);
-		const btn = React.createElement("button", 
+		function MinutesToHour ()
 		{
-			onClick: () => console.log("im clicked"),
-		}, 
-		"Click me");
-		const container = ( //컴포넌트의 첫 글자는 반드시 대문자여야 한다. 소문자면 React랑 JSX는 이게 HTML button 태그라고 생각한다.
-			<div>
-				<Title /> 
-				<Button />
-			</div>
-		);
-		ReactDOM.render(container, root);
+			const [amount, setAmount] = React.useState(0);
+			const [flipped, setFlipped] = React.useState(false);
+			const onChange = (event) => {
+				setAmount(event.target.value);
+			}
+			const reset = () => {
+				setAmount(0);
+			}
+			const onFlip = () => {
+				setFlipped((current) => !current);
+				reset();
+			}	
+			return (
+				<div>
+					<div>
+					<label htmlFor="minutes">Minutes</label>
+					<input 
+						value={flipped ? amount * 60 : amount}
+						id="minutes"
+						placeholer="Minutes"
+						type="number"
+						onChange={onChange}
+						disabled={flipped === true}
+					/>
+					</div>
+					<div>
+					<label htmlFor="hours">Hours</label>
+					<input
+						value={flipped ? amount : Math.round(amount / 60)}
+						id="hour"
+						placeholder="Hours" 
+						type="number" 
+						disabled={flipped === false}
+					/>
+					</div>
+					<button onClick={reset}>Reset</button>
+					<button onClick={onFlip}>Flip</button>
+				</div>
+			);
+		}
+		function KmToMiles() {
+			return <h3>KM 2 M</h3>
+		}
+
+		function App () {
+			const [index, setIndex] = React.useState("0")
+			const onSelect = (event) => {
+				setIndex(event.target.value);
+			}
+			return (
+				<div>
+					<h1>Super Converter</h1>
+					<select value={index} onChange={onSelect}>
+						<option value="0">Minutes & Hours</option>
+						<option value="1">Km & Miles</option>
+					</select>
+					<hr />
+					{index === "0" ? <MinutesToHour /> : null}
+					{index === "1" ? <KmToMiles /> : null}
+				</div>
+			);
+		};
+		ReactDOM.render(<App/>, root);
 	</script>
 </html>
