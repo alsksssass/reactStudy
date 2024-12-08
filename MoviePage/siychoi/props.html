@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
         const root = document.getElementById("root");
-        function Btn({btnText}) {
+        function Btn({btnText, onClick}) {
             return (
                 <button style={{
                     backgroundColor : "tomato",
@@ -16,21 +16,20 @@
                     padding: "10px 20px",
                     border: 0,
                     borderRadius: 10,
-                }}>
+                }}
+                onClick={onClick}>
                 {btnText}
                 </button>
             )
         }
+        const MemorizedBtn = React.memo(Btn);
         function App() {
-			const [counter, setCounter] = React.useState(0);
-			const onClick = () => {
-				// setCounter(counter + 1);
-				setCounter((current) => current + 1);
-			}
+            const [value, setValue] = React.useState("Save Changes");
+            const changeValue = () => setValue("Revert Changes");
             return(
                 <div>
-                    <Btn btnText="Save Changes" />
-                    <Btn btnText="Coutinue" />
+                    <MemorizedBtn btnText={value} onClick={changeValue} />
+                    <MemorizedBtn btnText="Coutinue" />
                 </div>
             );
         }
