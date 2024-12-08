@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<div id="root"></div>
+</body>
+<script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+	const root = document.getElementById("root");
+	function Btn({text, fontSize = 16}) {
+		console.log(text, "was rendered");
+		return <button
+			style={{ //button에다가 onClick을 달면 이벤트 리스너인데, 컴포넌트에 달면 props임
+			backgroundColor: "tomato",
+			color: "white",
+			padding: "10px 20px",
+			border: 0,
+			borderRadius: 16,
+			fontSize: fontSize,
+		}}>{text}</button>
+	}
+	Btn.propTypes = {
+		text: PropTypes.string.isRequired,
+		fontSize: PropTypes.number.isRequired,
+	}
+	// const MemorizedBtn = Reavt.memo(Btn) proptypes는 memo하고 같이 못 씀
+	function App() {
+		const [value, setValue] = React.useState("Save Changes")
+		const changeValue = () => setValue("Revert Changes")
+		return (
+			<div>
+				<Btn text={value} fontSize={18}/>
+				<Btn text={"continue"} fontSize={16} />
+			</div>
+		);
+	};
+	ReactDOM.render(<App />, root);
+</script>
+
+</html>
