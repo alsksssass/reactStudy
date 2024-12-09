@@ -53,8 +53,6 @@ function App() {
       timer = setInterval(() => {
         setCounter((prev) => prev + 1);
       }, 1000);
-    } else {
-      clearInterval(timer);
     }
     return () => clearInterval(timer);
   }, [isTimerRunning]);
