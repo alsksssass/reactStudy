@@ -1,25 +1,27 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-	const [toDo, setToDo] = useState("");
-	const onChange = (event) => setToDo(event.target.value);
-	const onSubmit = (event) => {
-		event.preventDefault();
-		if (toDo === "") {
-			return;
-		}
-	};
-	console.log(toDo);
+	const [loading, setLoading] = useState(true);
+	const [coins, setCoins] = useState([]);
+	useEffect(() => {
+		fetch("https://api.coinpaprika.com/v1/tickers")
+		.then(response => response.json())
+		.then(json => {
+			setCoins(json);
+			setLoading(false);
+		});
+	}, []);
 	return (
-		<div>
-			<form onSubmit={onSubmit}>
-				<input onChange={onChange} value={toDo} type="text" placeholder='Write your to do...' />
-				<button>Add To Do</button>
-			</form>
-		</div>
+	<div>
+		<h1>The Coins! ({coins.length})</h1>
+		{loading ? <strong>Loading...</strong> : null}
+		<ul>
+			{coins.map((coin, index) => <li key={index}>{coin.name} ({coin.symbol}): {coin.quotes.USD.price} USD</li>)}
+		</ul>
+	</div>
 	)
 }
 
