@@ -55,22 +55,22 @@ function EventDetail() {
         const [startDate, endDate] = eventRange.split("~");
         seteventDetailRange(calculateDaysDiff(startDate, endDate));
 
-        //navermap----
+        // //navermap----
 
-        if (eventDetail.lot && eventDetail.lat) {
-          const location = new naver.maps.LatLng(eventDetail.lat, eventDetail.lot);
-          const map = new naver.maps.Map('navermap', {
-            center: location,
-            zoom: 16,
-            zoomControl: true,
-            minZoom: 11,
-          });
-          new naver.maps.Marker({
-            position: location,
-            map,
-          })
-        }
-        //navermap----
+        // if (eventDetail.lot && eventDetail.lat) {
+        //   const location = new naver.maps.LatLng(eventDetail.lat, eventDetail.lot);
+        //   const map = new naver.maps.Map('navermap', {
+        //     center: location,
+        //     zoom: 16,
+        //     zoomControl: true,
+        //     minZoom: 11,
+        //   });
+        //   new naver.maps.Marker({
+        //     position: location,
+        //     map,
+        //   })
+        // }
+        // //navermap----
       }
     }
   }, [processedData, id]); // ID가 변경될 때마다 실행
@@ -135,10 +135,7 @@ function EventDetail() {
         </>
       )}
     </div>
-    <hr className="my-3"/>
-    <span className="inline-flex items-center rounded-md bg-white px-2 py-1 text-2xl font-bold text-black-700">길찾기</span>
-    <div id="navermap" className="flex w-full h-96 px-2 py-1 mt-5"></div>
-    <hr className="my-3"/>
+    
   </>
   );
 }

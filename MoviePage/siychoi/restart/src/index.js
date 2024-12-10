@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 // import { createBrowserRouter, HashRouter, RouterProvider } from 'react-router-dom';
 // import Home from './routes/Home';
 // import Detail from './routes/Detail';
@@ -8,7 +8,11 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import "./input.css";
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+// 구버전
+// ReactDOM.render(<App />, document.getElementById('root')) // 
+
 
 // if (process.env.REACT_APP_GA_KEY) {
 //   ReactGA.initialize(process.env.REACT_APP_GA_KEY);
