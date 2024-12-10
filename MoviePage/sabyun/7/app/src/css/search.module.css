@@ -1,0 +1,100 @@
+/* main.module.css */
+
+/* 폼 스타일 */
+.formContainer {
+	display: flex;
+	justify-content: center; /* 가로 중앙 정렬 */
+	align-items: center; /* 세로 중앙 정렬 */
+	margin: 20px 0;
+	gap: 10px; /* 입력 필드와 버튼 사이 여백 */
+  }
+  
+  /* 입력 필드 */
+  .inputField {
+	font-size: 1.5rem;
+	padding: 10px;
+	width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+  
+  /* 버튼 */
+  .submitButton {
+	font-size: 1.5rem;
+	padding: 10px 20px;
+	background-color: #6200ee;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .submitButton:hover {
+	background-color: #3700b3;
+  }
+  
+  /* 결과 컨테이너 */
+  .resultContainer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4열 고정 */
+	gap: 20px; /* 카드 간격 */
+	justify-content: center;
+	padding: 20px;
+  }
+  .resultImage {
+	width: 100%;          /* 부모 컨테이너 너비에 맞게 */
+	height: auto;         /* 비율 유지 */
+	max-height: 200px;    /* 최대 높이 제한 */
+	border-radius: 8px;   /* 둥근 테두리 */
+  }   
+  /* 카드 스타일 */
+  .resultCard {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 15px;
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .resultCard:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resultTitle {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0;
+	color: #333;
+  }
+  
+  .resultChannel {
+	font-size: 14px;
+	color: #666;
+  }
+  
+  .resultDate {
+	font-size: 12px;
+	color: #999;
+  }
+  
+  /* 반응형 레이아웃 */
+  @media (max-width: 1200px) {
+	.resultContainer {
+	  grid-template-columns: repeat(3, 1fr); /* 3개 */
+	}
+  }
+  
+  @media (max-width: 900px) {
+	.resultContainer {
+	  grid-template-columns: repeat(2, 1fr); /* 2개 */
+	}
+  }
+  
+  @media (max-width: 600px) {
+	.resultContainer {
+	  grid-template-columns: repeat(1, 1fr); /* 1개 */
+	}
+  }
+  
