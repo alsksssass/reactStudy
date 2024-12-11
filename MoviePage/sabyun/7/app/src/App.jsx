@@ -13,8 +13,8 @@ function App() {
 		<BrowserRouter>
 		<Routes>
 			<Route path="/" element={<Home />} />
-      		<Route path="download" element={<Download />}>
-			<Route path=":url" element={<DownloadSetPage />} />
+      		<Route path="download" element={<Download />} >
+				<Route path=":url" element={<DownloadSetPage />} />
 			</Route>
 		</Routes>
 		</BrowserRouter>
