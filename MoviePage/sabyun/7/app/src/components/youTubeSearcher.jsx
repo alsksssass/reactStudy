@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { Link, NavLink } from "react-router";
 import styles from "../css/search.module.css"; // CSS 모듈 불러오기
 
 export function Search() {
@@ -11,7 +12,7 @@ export function Search() {
   // Intersection Observer 설정
   const handleObserver = (entries) => {
     const target = entries[0];
-    if (text.length !== 0 && target.isIntersecting && nextPage !== "") {
+    if (target.isIntersecting && nextPage !=="" && !isLoading) {
       console.log("Load more pages");
       setIsLoading(true); // 무한 스크롤 트리거
     }
@@ -27,10 +28,10 @@ export function Search() {
     return () => {
       if (targetRef.current) observer.unobserve(targetRef.current);
     };
-  }, []);
+  }, [nextPage,isLoading]);
 
   useEffect(() => {
-    if (isLoading) {
+    if (isLoading && text.length > 0) {
       getYoutube(text);
     }
   }, [isLoading]);
@@ -41,7 +42,7 @@ export function Search() {
 
     try {
       const apiKey = import.meta.env.VITE_API_FOR_YOUTUBE;
-      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&order=relevance&q=${txt}&key=${apiKey}&maxResults=20&relevanceLanguage=ko${
+      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&order=relevance&q=${txt}&key=${apiKey}&maxResults=8&relevanceLanguage=ko${
         nextPage ? `&pageToken=${nextPage}` : ""
       }`;
 
@@ -53,7 +54,7 @@ export function Search() {
       }
 
       const data = await response.json();
-
+      console.log(data);
       setDataList((prev) =>
         nextPage === "" ? data.items || [] : [...prev, ...data.items || []]
       );
@@ -91,11 +92,12 @@ export function Search() {
       <ul className={styles.resultContainer}>
         {dataList.map((value, idx) => (
           <div key={idx} className={styles.resultCard}>
+            <nav>
             <img
               src={value.snippet.thumbnails.medium.url}
               alt="thumbnail"
               className={styles.resultImage}
-            />
+              />
             <div className={styles.resultTitle}>
               제목: {value.snippet.title}
             </div>
@@ -106,6 +108,13 @@ export function Search() {
               업로드 날짜:{" "}
               {new Date(value.snippet.publishTime).toLocaleDateString("ko-KR")}
             </div>
+            {/* <NavLink to={`/download/${value.id.videoId}?title=${value.snippet.title}`} */}
+            <NavLink 
+            to={`/download/${value.id.videoId}`}
+            state={{title: value.snippet.title}}
+            >다운로드 {value.id.videoId}
+            </NavLink>
+              </nav>
           </div>
         ))}
         {isLoading && <p>now loading...</p>}
