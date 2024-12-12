@@ -11,6 +11,9 @@ export default defineConfig({
   server: {
     port: 3000, // 개발 서버 포트
     open: true, // 브라우저 자동 열림
+    proxy:{
+      '/download': 'http://localhost:3300'
+    }
   },
   build: {
     target: 'esnext', // 최신 브라우저 지원

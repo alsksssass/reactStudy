@@ -4,7 +4,6 @@
 .formContainer {
 	display: flex;
 	justify-content: center; /* 가로 중앙 정렬 */
-	align-items: center; /* 세로 중앙 정렬 */
 	margin: 20px 0;
 	gap: 10px; /* 입력 필드와 버튼 사이 여백 */
   }
