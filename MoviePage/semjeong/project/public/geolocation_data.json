@@ -1,0 +1,78 @@
+{
+	"Version": 1,
+	"Key": "1849781",
+	"Type": "City",
+	"Rank": 55,
+	"LocalizedName": "Gaepo 2(i)-dong",
+	"EnglishName": "Gaepo 2(i)-dong",
+	"PrimaryPostalCode": "",
+	"Region": {
+	  "ID": "ASI",
+	  "LocalizedName": "Asia",
+	  "EnglishName": "Asia"
+	},
+	"Country": {
+	  "ID": "KR",
+	  "LocalizedName": "South Korea",
+	  "EnglishName": "South Korea"
+	},
+	"AdministrativeArea": {
+	  "ID": "11",
+	  "LocalizedName": "Seoul",
+	  "EnglishName": "Seoul",
+	  "Level": 1,
+	  "LocalizedType": "Special City",
+	  "EnglishType": "Special City",
+	  "CountryID": "KR"
+	},
+	"TimeZone": {
+	  "Code": "KST",
+	  "Name": "Asia/Seoul",
+	  "GmtOffset": 9,
+	  "IsDaylightSaving": false,
+	  "NextOffsetChange": null
+	},
+	"GeoPosition": {
+	  "Latitude": 37.488,
+	  "Longitude": 127.071,
+	  "Elevation": {
+		"Metric": {
+		  "Value": 26,
+		  "Unit": "m",
+		  "UnitType": 5
+		},
+		"Imperial": {
+		  "Value": 85,
+		  "Unit": "ft",
+		  "UnitType": 0
+		}
+	  }
+	},
+	"IsAlias": false,
+	"ParentCity": {
+	  "Key": "226001",
+	  "LocalizedName": "Gangnam-gu",
+	  "EnglishName": "Gangnam-gu"
+	},
+	"SupplementalAdminAreas": [
+	  {
+		"Level": 2,
+		"LocalizedName": "Gangnam-gu",
+		"EnglishName": "Gangnam-gu"
+	  }
+	],
+	"DataSets": [
+	  "AirQuality",
+	  "AirQuality-Regional",
+	  "AirQualityCurrentConditions",
+	  "AirQualityForecasts",
+	  "Alerts",
+	  "DailyLocalIndices",
+	  "ForecastConfidence",
+	  "FutureRadar",
+	  "HourlyLocalIndices",
+	  "MinuteCast",
+	  "PremiumAirQuality",
+	  "Radar"
+	]
+  }

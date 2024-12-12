@@ -1,0 +1,170 @@
+{
+	"Headline": {
+	  "EffectiveDate": "2024-12-13T19:00:00+09:00",
+	  "EffectiveEpochDate": 1734084000,
+	  "Severity": 7,
+	  "Text": "Cold Friday night",
+	  "Category": "cold",
+	  "EndDate": "2024-12-14T07:00:00+09:00",
+	  "EndEpochDate": 1734127200,
+	  "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?lang=en-us",
+	  "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?lang=en-us"
+	},
+	"DailyForecasts": [
+	  {
+		"Date": "2024-12-12T07:00:00+09:00",
+		"EpochDate": 1733954400,
+		"Temperature": {
+		  "Minimum": {
+			"Value": 27,
+			"Unit": "F",
+			"UnitType": 18
+		  },
+		  "Maximum": {
+			"Value": 42,
+			"Unit": "F",
+			"UnitType": 18
+		  }
+		},
+		"Day": {
+		  "Icon": 2,
+		  "IconPhrase": "Mostly sunny",
+		  "HasPrecipitation": false
+		},
+		"Night": {
+		  "Icon": 36,
+		  "IconPhrase": "Intermittent clouds",
+		  "HasPrecipitation": false
+		},
+		"Sources": [
+		  "AccuWeather"
+		],
+		"MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?lang=en-us",
+		"Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?lang=en-us"
+	  },
+	  {
+		"Date": "2024-12-13T07:00:00+09:00",
+		"EpochDate": 1734040800,
+		"Temperature": {
+		  "Minimum": {
+			"Value": 21,
+			"Unit": "F",
+			"UnitType": 18
+		  },
+		  "Maximum": {
+			"Value": 37,
+			"Unit": "F",
+			"UnitType": 18
+		  }
+		},
+		"Day": {
+		  "Icon": 1,
+		  "IconPhrase": "Sunny",
+		  "HasPrecipitation": false
+		},
+		"Night": {
+		  "Icon": 33,
+		  "IconPhrase": "Clear",
+		  "HasPrecipitation": false
+		},
+		"Sources": [
+		  "AccuWeather"
+		],
+		"MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?day=1&lang=en-us",
+		"Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?day=1&lang=en-us"
+	  },
+	  {
+		"Date": "2024-12-14T07:00:00+09:00",
+		"EpochDate": 1734127200,
+		"Temperature": {
+		  "Minimum": {
+			"Value": 23,
+			"Unit": "F",
+			"UnitType": 18
+		  },
+		  "Maximum": {
+			"Value": 38,
+			"Unit": "F",
+			"UnitType": 18
+		  }
+		},
+		"Day": {
+		  "Icon": 1,
+		  "IconPhrase": "Sunny",
+		  "HasPrecipitation": false
+		},
+		"Night": {
+		  "Icon": 33,
+		  "IconPhrase": "Clear",
+		  "HasPrecipitation": false
+		},
+		"Sources": [
+		  "AccuWeather"
+		],
+		"MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?day=2&lang=en-us",
+		"Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?day=2&lang=en-us"
+	  },
+	  {
+		"Date": "2024-12-15T07:00:00+09:00",
+		"EpochDate": 1734213600,
+		"Temperature": {
+		  "Minimum": {
+			"Value": 23,
+			"Unit": "F",
+			"UnitType": 18
+		  },
+		  "Maximum": {
+			"Value": 40,
+			"Unit": "F",
+			"UnitType": 18
+		  }
+		},
+		"Day": {
+		  "Icon": 3,
+		  "IconPhrase": "Partly sunny",
+		  "HasPrecipitation": false
+		},
+		"Night": {
+		  "Icon": 33,
+		  "IconPhrase": "Clear",
+		  "HasPrecipitation": false
+		},
+		"Sources": [
+		  "AccuWeather"
+		],
+		"MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?day=3&lang=en-us",
+		"Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?day=3&lang=en-us"
+	  },
+	  {
+		"Date": "2024-12-16T07:00:00+09:00",
+		"EpochDate": 1734300000,
+		"Temperature": {
+		  "Minimum": {
+			"Value": 26,
+			"Unit": "F",
+			"UnitType": 18
+		  },
+		  "Maximum": {
+			"Value": 37,
+			"Unit": "F",
+			"UnitType": 18
+		  }
+		},
+		"Day": {
+		  "Icon": 4,
+		  "IconPhrase": "Intermittent clouds",
+		  "HasPrecipitation": false
+		},
+		"Night": {
+		  "Icon": 33,
+		  "IconPhrase": "Clear",
+		  "HasPrecipitation": false
+		},
+		"Sources": [
+		  "AccuWeather"
+		],
+		"MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?day=4&lang=en-us",
+		"Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/daily-weather-forecast/1849769?day=4&lang=en-us"
+	  }
+	]
+  }

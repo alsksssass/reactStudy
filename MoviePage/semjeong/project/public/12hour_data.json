@@ -1,0 +1,194 @@
+[
+  {
+    "DateTime": "2024-12-13T02:00:00+09:00",
+    "EpochDateTime": 1734022800,
+    "WeatherIcon": 36,
+    "IconPhrase": "Intermittent clouds",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 31,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=2&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=2&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T03:00:00+09:00",
+    "EpochDateTime": 1734026400,
+    "WeatherIcon": 36,
+    "IconPhrase": "Intermittent clouds",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 30,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=3&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=3&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T04:00:00+09:00",
+    "EpochDateTime": 1734030000,
+    "WeatherIcon": 36,
+    "IconPhrase": "Intermittent clouds",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 29,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=4&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=4&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T05:00:00+09:00",
+    "EpochDateTime": 1734033600,
+    "WeatherIcon": 35,
+    "IconPhrase": "Partly cloudy",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 29,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=5&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=5&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T06:00:00+09:00",
+    "EpochDateTime": 1734037200,
+    "WeatherIcon": 34,
+    "IconPhrase": "Mostly clear",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 28,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=6&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=6&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T07:00:00+09:00",
+    "EpochDateTime": 1734040800,
+    "WeatherIcon": 33,
+    "IconPhrase": "Clear",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 27,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=7&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=7&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T08:00:00+09:00",
+    "EpochDateTime": 1734044400,
+    "WeatherIcon": 1,
+    "IconPhrase": "Sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 29,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=8&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=8&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T09:00:00+09:00",
+    "EpochDateTime": 1734048000,
+    "WeatherIcon": 1,
+    "IconPhrase": "Sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 30,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=9&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=9&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T10:00:00+09:00",
+    "EpochDateTime": 1734051600,
+    "WeatherIcon": 1,
+    "IconPhrase": "Sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 32,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=10&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=10&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T11:00:00+09:00",
+    "EpochDateTime": 1734055200,
+    "WeatherIcon": 1,
+    "IconPhrase": "Sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 35,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=11&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=11&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T12:00:00+09:00",
+    "EpochDateTime": 1734058800,
+    "WeatherIcon": 1,
+    "IconPhrase": "Sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 37,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=12&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=12&lang=en-us"
+  },
+  {
+    "DateTime": "2024-12-13T13:00:00+09:00",
+    "EpochDateTime": 1734062400,
+    "WeatherIcon": 1,
+    "IconPhrase": "Sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 37,
+      "Unit": "F",
+      "UnitType": 18
+    },
+    "PrecipitationProbability": 0,
+    "MobileLink": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=13&lang=en-us",
+    "Link": "http://www.accuweather.com/en/kr/daechi-2-i-dong/1849769/hourly-weather-forecast/1849769?day=1&hbhhour=13&lang=en-us"
+  }
+]
