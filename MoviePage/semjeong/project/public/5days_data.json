@@ -152,12 +152,12 @@
 		},
 		"Day": {
 		  "Icon": 4,
-		  "IconPhrase": "Intermittent clouds",
+		  "IconPhrase": "Rain",
 		  "HasPrecipitation": false
 		},
 		"Night": {
 		  "Icon": 33,
-		  "IconPhrase": "Clear",
+		  "IconPhrase": "Snow",
 		  "HasPrecipitation": false
 		},
 		"Sources": [

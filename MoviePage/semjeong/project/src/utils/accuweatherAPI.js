@@ -4,7 +4,7 @@ const API_FORECAST_PATH = '/forecasts/v1/';
 const API_KEY = import.meta.env.VITE_ACCUWEATHER_APIKEY;
 
 const getAccuweatherAPI = async (path, queries = {}) => {
-	const res = await fetch(`${API_URL}${path}?apikey=${API_KEY}` + queries.entries().map(v => `${v[0]}=${v[1]}`).join('&'));
+	const res = await fetch(`${API_URL}${path}?apikey=${API_KEY}&` + Object.entries(queries).map(v => `${v[0]}=${v[1]}`).join('&'));
 	if (res.status !== 200) {
 		console.log('error: cannot fetch =', res);
 		throw new Error('fetch error');

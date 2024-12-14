@@ -1,0 +1,19 @@
+.weatherList {
+  display: flex;
+  overflow-y: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border: 1px solid burlywood;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  width: calc(100vw - 100px);
+  justify-content: center;
+  max-height: calc(100vh - 210px);
+}
+
+.weatherList > li {
+  width: 300px;
+  color: #6f4f28;
+  list-style-type: none;
+}
