@@ -1,0 +1,63 @@
+.detail_image-container {
+  width: 100%;
+  max-width: 600px; /* Limit the image width for better responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+  margin: 16px 0; /* Add space around the image */
+  display: flex; /* Ensure image aligns centrally if needed */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Trim overflowing content */
+  border: 1px solid #ddd; /* Add a subtle border */
+  background-color: #fff; /* White background */
+}
+
+.detail_image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Preserve aspect ratio and fit */
+}
+
+div {
+  font-family: Arial, sans-serif; /* Clean and readable font */
+  line-height: 1.6; /* Improve readability */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 10px; /* Rounded container */
+  max-width: 700px; /* Center the content */
+  margin: 0 auto;
+}
+
+p {
+  margin: 8px 0; /* Space out paragraphs */
+  color: #333; /* Dark gray text color for readability */
+}
+
+p:nth-child(1) {
+  font-size: 20px; /* Highlight CODENAME */
+  font-weight: bold;
+  color: #2a9d8f; /* Accent color */
+}
+
+p:nth-child(2) {
+  font-size: 24px; /* Highlight TITLE */
+  font-weight: bold;
+  color: #264653; /* Darker accent */
+}
+
+p:last-child {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e76f51; /* Highlight fee */
+}
+
+a {
+  color: #0077cc; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline; /* Indicate clickable links */
+}
